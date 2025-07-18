@@ -2,6 +2,9 @@
 
 A collection of intelligent agents that play the classic Snake game using different AI approaches. This project demonstrates various AI techniques from simple reflex agents to reinforcement learning.
 
+This research was conducted as part of the AI Laboratory coursework, demonstrating the practical application of intelligent agent architectures in game environments. The implementations serve as educational resources for understanding the evolution from reactive systems to learning-based artificial intelligence.
+
+
 ## 🎮 Game Overview
 
 The Snake game implementation includes multiple AI agents:
