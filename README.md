@@ -26,7 +26,7 @@ The Snake game implementation includes multiple AI agents:
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Krish-Om/agents-in-ai.git
    cd SnakeAgents
    ```
 
@@ -34,7 +34,7 @@ The Snake game implementation includes multiple AI agents:
    ```bash
    python -m venv .venv
    source .venv/bin/activate  
-   On Windows: venv\Scripts\activate
+   # On Windows: venv\Scripts\activate
    ```
 
 3. Install dependencies:
@@ -151,31 +151,35 @@ Check the `reports/` directory for detailed performance analysis of each agent.
 - `pygame`: Game engine and graphics
 - `json`: For saving/loading training data (Q-learning)
 - Standard Python libraries: `os`, `sys`, `math`, `random`, `time`
- 
 
 ## Agent Types
 
 ### 1. Simple Reflex Agent
+
 - Location: `agents/simple_reflex/`
 - Basic reactive behavior based on immediate perceptions
 - No internal state or planning
 
-### 2. Goal-Based Agent  
+### 2. Goal-Based Agent
+
 - Location: `agents/goal_based/`
 - Uses goal information to guide decision making
 - Plans actions to achieve specific objectives
 
 ### 3. Model-Based Agent
+
 - Location: `agents/model_based/`
 - Maintains internal model of the world
 - Uses model for planning and decision making
 
 ### 4. Utility-Based Agent
+
 - Location: `agents/utility_based/`
 - Uses utility functions to evaluate outcomes
 - Makes decisions based on expected utility
 
 ### 5. Q-Learning Agent
+
 - Location: `agents/q_learning/`
 - Reinforcement learning using Q-learning algorithm
 - Learns optimal policy through trial and error
@@ -184,18 +188,21 @@ Check the `reports/` directory for detailed performance analysis of each agent.
 ## Usage
 
 ### Running Q-Learning Training
+
 ```bash
 cd agents/q_learning
 python auto_trainer.py
 ```
 
 ### Playing with Trained Agent
+
 ```bash
 cd agents/q_learning  
 python trained_player.py
 ```
 
 ### Screenshot Capture for Documentation
+
 ```bash
 cd agents/q_learning
 python screenshot_trainer.py  # Training with overlay
@@ -203,17 +210,22 @@ python screenshot_player.py   # Playing with stats
 ```
 
 ## Core Game Engine
+
 The main Snake game implementation is in `core_game/source.py` and provides:
+
 - Game mechanics (movement, collision detection, scoring)
 - Rendering and display
 - External agent interface
 - Audio and visual effects
 
 ## Performance
+
 The Q-learning agent shows clear improvement:
+
 - Training performance: ~0.30 average score
 - Trained performance: Consistently achieves scores of 7+
 - Learning uses epsilon-greedy strategy with decay (0.9 → 0.01)
 
 ## Documentation
+
 Full technical report and analysis available in `reports/snake_agents_report.tex`
